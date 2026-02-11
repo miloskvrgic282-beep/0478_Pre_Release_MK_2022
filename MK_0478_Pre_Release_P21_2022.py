@@ -37,18 +37,18 @@ print("2 - Gift shop")
 print("3 - Painting and decoration")
 
 Volunteers = int(input("Enter code 0-3:\n"))
-    while Volunteers <0 or Volunteers >3:        #validating
-        Volunteers = int(input("Enter code 0-3:\n"))
+while Volunteers < 0 or Volunteers > 3:        #validating
+    Volunteers = int(input("Enter code 0-3:\n"))
 
     Volunteers = int(input("Enter code 0-3:\n"))
 
-    FirstNameList.append(FirstName)
-    LastNameList.append(LastName)
-    ListOfJoinDates.append(JoinDate)
-    PaidFeeList.append(PaidFee)
-    ListOfVolunteers.append(Volunteers)
+FirstNameList.append(FirstName)
+LastNameList.append(LastName)
+ListOfJoinDates.append(JoinDate)
+PaidFeeList.append(PaidFee)
+ListOfVolunteers.append(Volunteers)
 
-    repetition = input("Enter 'q' to quit or press any key to register another member\n")
+repetition = input("Enter 'q' to quit or press any key to register another member\n")
 
 #check the lists
 for i in range (0,len(FirstNameList)):
@@ -58,13 +58,14 @@ for i in range (0,len(FirstNameList)):
 
     print("\n")
 
-  print("=========================")
-    print("SPONSORING WOODEN PLANK(S)")
-    print("=========================\n")
+print("=========================")
+print("SPONSORING WOODEN PLANK(S)")
+print("=========================\n")
 
-    MembersPlaque = input("Would you like to kindly sponsor plank? Enter y/n:\n")
-    while MembersPlaque != "y" and MembersPlaque != "n":   #validation
-          MembersPlaque = input("Would you like to kindly sponsor plank? Input y/n:\n")
+MembersPlaque = input("Would you like to kindly sponsor plank? Enter y/n:\n")
+while MembersPlaque != "y" and MembersPlaque != "n":   
+    #validation
+    MembersPlaque = input("Would you like to kindly sponsor plank? Input y/n:\n")
 
     if MembersPlaque == "y":
         NamePlaque = input("Enter first and last name to appear on the plaque: \n")
@@ -115,7 +116,7 @@ for i in range (0,len(FirstNameList)):
 
     
    
- repetition2 = ""
+repetition2 = ""
 while repetition2 != "q":
 
     print("===========================")
@@ -131,9 +132,9 @@ while repetition2 != "q":
     print("Enter 6 for members whose membership has expired")
     print("Enter 7 for members who have not paid yet")
 
-  ChoiceForSearch = int(input("Enter number between 1-7\n"))
-    while ChoiceForSearch <1 or ChoiceForSearch >7:
-        ChoiceForSearch = int(input("Enter a number in the range 1-7\n"))
+ChoiceForSearch = int(input("Enter number between 1-7\n"))
+while ChoiceForSearch <1 or ChoiceForSearch >7:
+    ChoiceForSearch = int(input("Enter a number in the range 1-7\n"))
 
     for i in range(0,len(FirstNameList)):
         if ChoiceForSearch == 1:
